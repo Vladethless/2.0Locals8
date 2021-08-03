@@ -1,0 +1,113 @@
+/*------------------------------------------------------------------------------------------------------------------
+Tooltips
+------------------------------------------------------------------------------------------------------------------*/
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  word-wrap: break-word;
+  opacity: 0;
+  @extend %font-08;
+  @extend %letter-spacing-1;
+  @extend %text-font;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip .arrow {
+  position: absolute;
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.tooltip .arrow::before {
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tooltip.bs-tooltip-top, .tooltip.bs-tooltip-auto[x-placement^="top"] {
+  padding: 0.4rem 0;
+}
+
+.tooltip.bs-tooltip-top .arrow, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow {
+  bottom: 0;
+}
+
+.tooltip.bs-tooltip-top .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  margin-left: -0.2rem;
+  content: "";
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: $accent-clr;
+}
+
+.tooltip.bs-tooltip-right, .tooltip.bs-tooltip-auto[x-placement^="right"] {
+  padding: 0 0.4rem;
+}
+
+.tooltip.bs-tooltip-right .arrow, .tooltip.bs-tooltip-auto[x-placement^="right"] .arrow {
+  left: 0;
+}
+
+.tooltip.bs-tooltip-right .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  margin-top: -0.2rem;
+  content: "";
+  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-right-color: $accent-clr;
+}
+
+.tooltip.bs-tooltip-bottom, .tooltip.bs-tooltip-auto[x-placement^="bottom"] {
+  padding: 0.4rem 0;
+}
+
+.tooltip.bs-tooltip-bottom .arrow, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow {
+  top: 0;
+}
+
+.tooltip.bs-tooltip-bottom .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  content: "";
+  margin-left: -0.2rem;
+  border-width: 0 0.4rem 0.4rem;
+  border-bottom-color: $accent-clr;
+}
+
+.tooltip.bs-tooltip-left, .tooltip.bs-tooltip-auto[x-placement^="left"] {
+  padding: 0 0.4rem;
+}
+
+.tooltip.bs-tooltip-left .arrow, .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow {
+  right: 0;
+}
+
+.tooltip.bs-tooltip-left .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  content: "";
+  right: 0;
+  margin-top: -0.2rem;  
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: $accent-clr;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.3rem 0.9rem;
+  color: #000;
+  text-align: center;
+  background-color: $accent-clr;
+  border-radius: 0rem;
+}

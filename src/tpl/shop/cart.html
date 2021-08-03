@@ -1,0 +1,179 @@
+<!-- cart -->
+<div id="cart">
+	<div class="container-fluid px-0">
+		<div class="row">
+			<div class="cart-wrap col-12">
+				<h2>Your Cart</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Image</th>
+							<th scope="col">Product</th>
+							<th scope="col">Price</th>
+							<th scope="col">Quantity</th>
+							<th scope="col">Total</th>
+							<th scope="col">Remove</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="table-img">
+								<figure>
+									<img src="./images/items/item-1.jpg" alt="Item 1"/>
+								</figure>
+							</td>
+							<td class="table-name">
+								<h4>Wooden Bar Stool</h4>
+								<ul class="lower-upper">
+									<li><span>article</span>001</li>
+									<li><span>brand</span>Brand01</li>
+									<li><span>color</span>light Brown</li>
+								</ul>
+							</td>
+							<td class="table-price">$187</td>
+							<td class="table-qnt">
+								<div class="qty-box">
+									<div class="qty-btn qty-btn-down">
+										-
+									</div>
+									<input type="number" min="1" max="99" step="1" value="2">
+									<div class="qty-btn qty-btn-up">
+										+
+									</div>
+								</div>
+							</td>
+							<td class="table-total">$374</td>
+							<td class="table-remove"><a href="#0" data-toggle="tooltip" data-placement="top" title="Remove"><i class="fa fa-trash-o"></i></a></td>
+						</tr>
+						<tr>
+							<td class="table-img">
+								<figure>
+									<img src="./images/items/item-2.jpg" alt="Item 1"/>
+								</figure>
+							</td>
+							<td class="table-name">
+								<h4>Tweed Chair</h4>
+								<ul class="lower-upper">
+									<li><span>article</span>002</li>
+									<li><span>brand</span>Brand02</li>
+									<li><span>color</span>Lavender</li>
+								</ul>
+							</td>
+							<td class="table-price">$129.99</td>
+							<td class="table-qnt">
+								<div class="qty-box">
+									<div class="qty-btn qty-btn-down">
+										-
+									</div>
+									<input type="number" min="1" max="99" step="1" value="1">
+									<div class="qty-btn qty-btn-up">
+										+
+									</div>
+								</div>
+							</td>
+							<td class="table-total">$129.99</td>
+							<td class="table-remove"><a href="#0" data-toggle="tooltip" data-placement="top" title="Remove"><i class="fa fa-trash-o"></i></a></td>
+						</tr>
+						<tr>
+							<td class="table-img">
+								<figure>
+									<img src="./images/items/item-3.jpg" alt="Item 1"/>
+								</figure>
+							</td>
+							<td class="table-name">
+								<h4>Wooden Coffee Table</h4>
+								<ul class="lower-upper">
+									<li><span>article</span>003</li>
+									<li><span>brand</span>Brand03</li>
+									<li><span>color</span>Brown</li>
+								</ul>
+							</td>
+							<td class="table-price">$250</td>
+							<td class="table-qnt">
+								<div class="qty-box">
+									<div class="qty-btn qty-btn-down">
+										-
+									</div>
+									<input type="number" min="1" max="99" step="1" value="1">
+									<div class="qty-btn qty-btn-up">
+										+
+									</div>
+								</div>
+							</td>
+							<td class="table-total">$250</td>
+							<td class="table-remove"><a href="#0"  data-toggle="tooltip" data-placement="top" title="Remove"><i class="fa fa-trash-o"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<!--/table-->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="calculate-shipping">
+					<h3>Calculate Shipping</h3>
+					<div>
+						<div class="form-row">
+							<div class="form-group form-border">
+								<div class="select-wrap">
+									<select class="m-select">
+										<option selected>Country*</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group form-border">
+								<div class="select-wrap">
+									<select class="m-select">
+										<option selected>City / Town*</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group form-border">
+								<input type="text" id="zip" placeholder="Zip Code*" data-error="Zip Code is required." required>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group form-border">
+								<a href="#0" class="btn btn-ltv"><span>Estimate</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/calculate-shipping-->
+				<div class="discount-code">
+					<h3>Discount Coupon Code</h3>
+					<div class="form-row">
+						<div class="form-group form-border">
+							<input type="text" id="coupon" class="form-control" placeholder="Enter Coupon Code" data-error="Coupon Code is required." required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<a href="#0" class="btn btn-ltv"><span>Apply Code</span></a>
+						</div>
+					</div>
+				</div>
+				<!--/discount-code-->
+			</div>
+			<!--/col-->
+			<div class="col-lg-6">
+				<div class="summary-wrap">
+					<h3><span>Total Summary</span> <span>(4)</span></h3>
+					<p><span class="row-name">Sub Total</span><span class="row-price">$753.99</span></p>
+					<p><span class="row-name">Shipping Cost</span><span class="row-price">$0</span></p>
+					<h4><span class="row-name">Total</span><span class="row-price">$753.99</span></h4>
+				</div>
+				<!--/summary-->
+				<a href="checkout.html" class="btn btn-block btn-ltv btn-checkout"><span>Checkuot</span></a>
+			</div>
+			<!--/col-->
+		</div>
+	</div>
+</div>
+<!-- /cart -->

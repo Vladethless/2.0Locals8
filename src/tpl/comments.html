@@ -1,0 +1,76 @@
+<!-- comments -->
+<section id="comments-list">
+	<h4>Comments (3)</h4>
+	<!--comment-->
+	<div class="media">
+		<img class="d-flex mr-3" src="./img/pre.jpg" data-src="./images/profiles/profile-2.jpg" alt="Profile's image">
+		<div class="media-body">
+			<div class="media-header">
+				<h5 class="mt-0">Jack Masters</h5>
+				<div class="media-time"><div class="date"><span>April</span>28, 2018 at 12:36 pm</div></div>
+			</div>
+			<p>ras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			<a href="#comment-form" class="replay hyphen-left"><span>Replay</span></a>
+			<!--child comment-->
+			<div class="media sub-media">
+				<a class="d-flex pr-3" href="#">
+					<img src="./img/pre.jpg" data-src="./images/profiles/profile-1.jpg" alt="Generic placeholder image">
+				</a>
+				<div class="media-body">
+					<div class="media-header">
+						<h5 class="mt-0">Administrator</h5>
+						<div class="media-time"><div class="date"><span>April</span> 28, 2018 at 12:36 pm</div></div>
+					</div>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<a href="#comment-form" class="replay hyphen-left">Replay</a>
+				</div>
+			</div>
+			<!--end of child comment-->
+		</div>
+	</div>
+	<!-- end of comment-->  
+	<!--comment-->  
+	<div class="media">
+		<img class="d-flex mr-3" src="./img/pre.jpg" data-src="./images/profiles/profile-3.jpg" alt="Generic placeholder image">
+		<div class="media-body">
+			<div class="media-header">
+				<h5 class="mt-0">Mary Smith</h5>
+				<div class="media-time"><div class="date"><span>March</span> 30, 2018 at 12:36 pm</div></div>
+			</div>
+			<p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			<a href="#comment-form" class="replay hyphen-left">Replay</a>
+		</div>
+	</div>
+	<!--end of comment-->
+</section>
+<!-- end of comments -->
+<hr/>
+<!--comments form-->
+<div id="comment-form" class="comment-wrap clearfix">
+	<h4>Leave a comment </h4>
+	<form class="comment-form">
+		<div class="row">
+			<label for="comment-name" class="col-md-2 col-form-label"><span>Name*</span>
+			<i class="fa fa-user-plus" aria-hidden="true"></i></label>
+			<div class="col-md-10 form-border">
+				<input type="text" id="comment-name" name="comment-name" class="form-control" placeholder="your name">
+			</div>
+		</div>
+		<div class="row">
+			<label for="comment-email" class="col-md-2  col-form-label"><span>Email*</span>
+			<i class="fa fa-envelope" aria-hidden="true"></i></label>
+			<div class="col-md-10 form-border">
+				<input type="email" id="comment-email" name="comment-email" class="form-control" placeholder="you@example.com">
+			</div>
+		</div>
+		<div class="row">
+			<label for="comment-message" class="col-md-2 col-form-label"><span>Comment</span>
+			</label>
+			<div class="col-md-10 form-border">
+				<textarea id="comment-message" class="form-control md-textarea" name="comment-message" rows="2" placeholder="Comment.."></textarea>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-elegant"><i class="fa fa-plus"></i> <span>Add comment</span></button>
+	</form>
+</div>
+<!--end of comments form-->

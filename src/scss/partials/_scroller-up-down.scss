@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------------------------------------------------------
+ Scroller Up / Down
+------------------------------------------------------------------------------------------------------------------*/
+.scroller-up-down {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  z-index: 10;
+
+  a {
+    width: 100%;
+    display: inline-block;
+    width: $section_offset;
+    height: auto;
+    line-height: 1; 
+    transform-origin: 0 100%;
+    transform: rotate(-90deg) translateY(8.5rem);
+
+    span {
+      padding-left: 3.5rem;
+
+      &:before {
+        content: '';
+        width: 3rem;
+        height:  $hyphen-heavy;
+        display: block;
+        position: absolute;
+        top: calc(50% - 0.1rem);
+        @extend %main-bg;
+      }
+    }
+  }
+}
+
+.scroller-up-down-2{
+  position: fixed;
+  width: $baseline *1.5;
+  height: $baseline * 1.5;  
+  bottom: $baseline / 2;
+  right: $baseline / 2;
+ 
+  a{
+    width: 100%;
+    height: 100%;
+    padding: $baseline / 2;
+    display: block;
+    background: url(../img/fotorama/arrow-left.png) no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+    opacity: .9;
+    @extend %transition-35;
+    @extend %dark-bg;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+

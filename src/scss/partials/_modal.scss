@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------------------------------------------------------
+Modal
+------------------------------------------------------------------------------------------------------------------*/
+#git-modal .modal-header {
+  border: none;
+}
+
+#git-modal button {
+  @extend %main-bg;
+}
+
+#git-modal .modal-body {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+#git-modal .modal-body #git-modal-title h5 {
+  text-align: center;
+  @extend %main-clr;
+  @extend %element_offset;
+}
+
+#git-modal .modal-body p {
+  text-align: center;
+}

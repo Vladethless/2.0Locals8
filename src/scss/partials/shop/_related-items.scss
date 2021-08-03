@@ -1,0 +1,15 @@
+.related-items{
+	@extend %section_offset;
+
+	.product{
+		margin-bottom: 0;
+	}
+
+	@media(max-width: 991px){
+		margin-bottom: $section_offset - $baseline;
+
+		div[class^='col-']{
+			margin-bottom: $baseline;
+		}
+	}
+}

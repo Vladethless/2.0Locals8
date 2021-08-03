@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------------------------------------------------------
+Footer
+-----------------------------------------------------------------------------------------------------------------*/
+.footer {
+  padding-top: $element_offset;
+  padding-bottom: 0;
+  position: relative;
+  @extend %dark-clr;
+}
+
+.footer ul li span {
+  @extend %grey-blue-clr;
+}
+
+.footer .footer-brand {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-brand {
+    padding-left: 0;
+  }
+}
+
+.footer .footer-brand .brand h6 {
+  display: inline-block;
+  @extend %mb-1-3;
+}
+
+.footer .footer-brand .brand {
+  .social{
+    @include social;
+  }
+}
+
+.footer .footer-contact ul {
+  list-style: none;
+}
+
+.footer .additional-links ul {
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .footer .footer-brand,
+  .footer .footer-mission,
+  .footer .footer-contact {
+    margin-bottom: $element_offset;
+    padding: 0;
+  }
+}
+
+.footer .copyright {  
+  justify-content: center;
+  padding-bottom: $baseline / 2;
+  @extend %grey-blue-clr;
+}
+
+.footer .copyright p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .footer .copyright {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .footer .copyright {
+    padding: 0 30px;
+  }
+}

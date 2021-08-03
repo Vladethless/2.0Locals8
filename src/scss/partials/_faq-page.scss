@@ -1,0 +1,119 @@
+/*------------------------------------------------------------------------------------------------------------------
+Faq Page
+------------------------------------------------------------------------------------------------------------------*/
+#faq {
+  @extend %section_offset;
+
+  aside a .active {
+    @extend %main-clr;
+  }
+
+  .panel-wrap{
+    padding-left: $element_offset * 2;
+
+    @media (max-width: 1200px) {
+      padding-left: $element_offset;
+    }
+
+    @media (max-width: 1023px) {
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    aside {
+      margin-bottom: $element_offset;
+    }
+  }
+
+  @media (max-width: 480px) {
+    [class^='col-'] {
+      padding: 0;
+    }
+  }
+}
+
+.panel-wrap{
+  width: 100%;  
+
+  .panel-group {
+    padding-left: 3.25em;
+  }
+
+  .panel-body {
+    padding:  $element_offset / 2 0 $element_offset / 4;
+    max-width: 700px;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel + .panel {
+    margin-top: 0;
+    border-top: 0;
+  }
+
+  .panel {
+    border-radius: 0;
+    @extend %mb-1-2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel-default{
+    .panel-heading {
+      position: relative;  
+      padding: 0; 
+      user-select: none;
+      @extend %dark-clr;
+      @extend %grey-lgt-bg;
+
+      a {
+        display: block;
+        padding: 0.9rem 1.8rem;
+        text-decoration: none;
+        @extend %dark-clr;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -3.25em;
+          width: 3em;
+          height: 100%;  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform .35s linear;
+        }
+
+        &[aria-expanded="true"] {
+          @extend %dark-bg;
+          @extend %white-clr;
+
+          &:after {
+            content: "\f068";
+            border-top: 1px solid $main-clr;
+            border-bottom: 1px solid $main-clr;
+            @extend %white-clr;
+            @extend %main-bg;
+          }
+        }
+
+        &[aria-expanded="false"]{
+          &:after {
+            color: #fff !important;
+            content: "\f067";
+            border-top: 1px solid $dark-clr;
+            border-bottom: 1px solid $dark-clr;
+            @extend %dark-bg;
+          }
+        }
+      }
+    }
+  }
+}
+

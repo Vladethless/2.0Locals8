@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------------------------------------------------
+About Media
+------------------------------------------------------------------------------------------------------------------*/
+.about-media {
+  margin-bottom: $section_offset;
+
+  header {
+    justify-content: space-between;
+    @extend %element_offset;
+
+    .header-wrap {
+      width: 50%;
+    }
+  }
+
+  .media-grid {
+    position: relative;
+
+    .media-item {
+      padding-bottom: $baseline;
+
+      .media-img {
+        height: auto;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        padding-top: calc(100% / .8);
+        @extend %mb-1-2;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          filter: grayscale(10%);
+          @include object-fit;
+        }
+      }
+
+      .figcaption {
+        position: relative;
+       
+
+        p {
+          @extend %grey-blue-clr;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .about-media header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start !important;
+  }
+
+  .about-media header .header-wrap {
+    width: 100%;
+  }
+}
+
+

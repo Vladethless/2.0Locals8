@@ -1,0 +1,25 @@
+.featured-items{
+	@extend %section_offset_small;
+
+	#featured-items-tab{
+		.nav-item{ 
+			padding: 0;
+
+			a{
+				@extend %grey-blue-clr;
+
+				&.active{
+					@extend %main-clr;
+				}
+			}
+
+			.nav-link{
+				padding: 0;
+			}
+		};
+	}
+
+	#featured-items-content{
+		
+	}	
+}

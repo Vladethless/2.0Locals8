@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------------------------------------------------------
+Content Block for Blog Page
+------------------------------------------------------------------------------------------------------------------*/
+
+#news .post figure, 
+.home-blog .blog-grid .post figure, 
+.blog-content .post figure {
+    overflow: hidden;
+    @extend %grey-lgt-bg;
+}
+.post img{
+  // @extend %opacity-0;
+}
+#news .post figure img, 
+.home-blog .blog-grid .post figure img, 
+.blog-content .post figure img {
+    height: 8 * $baseline;
+    width: auto;
+    min-width: 100%;
+    @include object-fit;
+}
+@media (max-width: 1200px) {
+    #news .post figure img, 
+    .home-blog .blog-grid .post figure img, 
+    .blog-content .post figure img {
+        height: 6 * $baseline;
+    }
+}
+@media (max-width: 992px) {
+    #news .post figure img, 
+    .home-blog .blog-grid .post figure img, 
+    .blog-content .post figure img {
+        width: 100%;
+        height: auto;
+    }
+}
+#news .post .post-meta, 
+.home-blog .blog-grid .post .post-meta, 
+.blog-content .post .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: $baseline / 3;
+    margin-top: $baseline / 3;
+    @extend %grey-blue-clr;
+
+   .date{
+      flex-grow: 2;
+   }
+}
+@media (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    #news .post .post-meta, 
+    .home-blog .blog-grid .post .post-meta, 
+    .blog-content .post .post-meta {
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+#news .post .post-text, 
+.home-blog .blog-grid .post .post-text, 
+.blog-content .post .post-text {
+    margin-bottom: $baseline / 2;
+}
+.blog {
+    @extend %section_offset;
+}
+.blog-content .post {
+    @extend %element_offset_small;
+    &>.animated {
+        @extend %opacity-0;
+    }
+}
+.blog-content + nav {
+    margin-top: $element_offset / 2;
+}

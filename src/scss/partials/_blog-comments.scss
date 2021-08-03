@@ -1,0 +1,232 @@
+/*------------------------------------------------------------------------------------------------------------------
+Comments Block. Consists styles for Comment List and Comment Form
+------------------------------------------------------------------------------------------------------------------*/
+#comments-list {
+  position: relative;
+  @extend %white-bg;
+  @extend %element_offset;
+
+   h4 {
+    @extend %element_offset_small;
+  }
+
+  .media {
+    width: 100%;
+    @extend %element_offset;
+
+    .sub-media {
+      padding-top: $baseline;
+      margin-bottom: 0;
+    }
+
+    img {
+      border-radius: 50%;
+      opacity: .9;
+      @extend %transition-35;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      text-align: justify;
+      @extend %grey-blue-clr;
+    }
+
+    .media-header, 
+    .media-footer {
+      display: flex;
+      justify-content: space-between;
+
+      h5 {
+        width: 100%;
+      }
+
+      .media-time {
+        width: 100%;
+        @extend %dark-clr;
+      }
+    }
+
+    .media-header{
+      .product-rating{
+        justify-content: flex-start;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        span{
+          display: none;
+        }
+
+        label{
+          line-height: 1;
+        }
+
+        @media(max-width: 767px){
+          margin-bottom: $baseline / 2;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    .media-footer{
+      justify-content: flex-end;
+      margin-top: $baseline / 2;
+
+      .media-time{
+        align-self: flex-end;
+      }
+    }
+
+    .replay {
+      float: right;
+      margin-top: $baseline / 3;
+      margin-right: 0;
+
+      &:before {
+        @extend %main-bg;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #comments-list .media .media-header {
+    display: block;
+  }
+}
+
+@media (max-width: 479px) {
+  #comments-list .media{
+    margin-bottom: $baseline;
+  }
+  #comments-list .media img {
+    display: none !important;
+  }
+
+  #comments-list .sub-media a{
+    padding-right: 0 !important;
+  }
+}
+
+/*------------------------Comment form-----------------------*/
+#comment-form {
+  margin-top: $element_offset;
+  margin-right: $element_offset;
+  position: relative;
+  overflow: hidden;
+  @extend %white-bg;
+
+  h4 {
+    @extend %element_offset_small;
+  }
+
+  .form-border {
+    margin-bottom: 1.5rem;
+  }
+
+  button {
+    margin-left: 0;
+    text-transform: uppercase;
+
+    i {
+      margin-right: 0.6rem;
+    }
+  }
+
+  textarea.md-textarea {
+    padding: 0;
+  }
+
+  label {
+    align-self: flex-end;
+    margin-bottom: ($lh / 2) * 1rem;
+
+    i {
+      display: none;
+    }
+  }  
+
+  div[class^=col-] {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #comment-form {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  #comment-form .form-border,
+  #comment-form div[class^=col-] {
+    padding: 0 15px !important;
+  }
+}
+
+@media(max-width: 767px){
+  #comment-form label span{
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #comment-form .row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom:  $element_offset / 4;
+  }
+  #comment-form.row:last-child{
+    margin-bottom: 0;
+  }
+
+  #comment-form .form-border label{
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    position: absolute;
+    left: 1.2rem;
+    bottom: 1rem;
+    z-index: 2;
+  }
+  #comment-form .form-border label span {
+    display: none;
+  }
+  #comment-form .form-border label i {
+    display: block;
+    color: $dark-clr;
+   }
+
+  // #comment-form input {
+  //   padding-left: 2.4rem;
+  // }
+}
+.tab-content{
+  #comment-form{   
+    .product-rating {
+      margin: 0;
+      padding: 0;
+      border-bottom: 0;
+      padding: 0 15px !important;
+      margin-bottom: $baseline / 3;
+
+      label{
+        display: block;
+        margin-bottom: $baseline / 3;
+      }  
+
+      @media(max-width: 767px){
+
+      }
+    }
+
+    div[class^=col-] {
+        padding: 0 15px !important;
+    }
+  }
+}
+
+

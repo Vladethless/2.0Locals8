@@ -1,0 +1,105 @@
+/*------------------------------------------------------------------------------------------------------------------
+Corners
+------------------------------------------------------------------------------------------------------------------*/
+.corner-top-left,
+.corner-top-right,
+.corner-bottom-right,
+.corner-bottom-left{
+  position: relative; 
+
+  *{
+    box-shadow: none !important;
+  }
+
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: 999;
+    transition: none !important;
+    @extend %dark-bg;
+  }
+}
+
+.corner-top-left {
+  &:before, 
+  &:after {
+    top: -.4rem;
+  }
+
+  &:before {
+    left: -.4rem;
+    height: .1rem;
+    width:  $element_offset / 2;
+  }
+
+  &:after {
+    left: -.4rem;
+    width: .1rem;
+    height:  $element_offset / 2;
+  }
+}
+
+.corner-top-right {
+  &:before, 
+  &:after {
+    top: -.4rem;
+  }
+
+  &:before {
+    right: -.4rem;
+    height: .1rem;
+    width:  $element_offset / 2;
+  }
+
+  &:after {
+    right: -.4rem;
+    width: .1rem;
+    height:  $element_offset / 2;
+  }
+}
+
+.corner-bottom-right {
+  &:before, 
+  &:after {
+    bottom: -.4rem;
+  }
+
+  &:before {
+    right: -.4rem;
+    height: .1rem;
+    width:  $element_offset / 2;
+  }
+
+  &:after {
+    right: -.4rem;
+    width: .1rem;
+    height:  $element_offset / 2;
+  }
+}
+
+.corner-bottom-left {
+  &:before, 
+  &:after {
+    bottom: -.4rem;
+  }
+
+  &:before {
+    left: -.4rem;
+    height: .1rem;
+    width:  $element_offset / 2;
+  }
+
+  &:after {
+    left: -.4rem;
+    width: .1rem;
+    height:  $element_offset / 2;
+  }
+}
+
+
+
+
+
+
+

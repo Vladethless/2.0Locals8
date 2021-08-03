@@ -1,0 +1,105 @@
+/*------------------------------------------------------------------------------------------------------------------
+Statistics Section with background
+------------------------------------------------------------------------------------------------------------------*/
+.statistics-with-bg {
+  padding-top: 9 * $baseline;
+  padding-bottom: 9 * $baseline;
+  background: 100% 100% fixed no-repeat;
+  background-size: cover;
+  filter: grayscale(0);
+  @include shadow-tb;
+  @extend %white-clr;
+  @extend %section_offset;
+  @extend %opacity-0;
+
+  &.animated{
+    @extend %animated-08s;
+  }
+
+  .block-wrap {
+    position: relative;
+    z-index: 2;
+  }
+
+  .statistics {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    .stat {
+      width: 25%;
+
+      .number {
+        width: 3em;
+        height: 3em;
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: 800;
+        @include flex-center;
+        @extend %main-bg;
+        @extend %white-clr;
+        @extend %header-font;
+
+        &:before, 
+        &:after {
+          content: '';
+          position: absolute;
+          top: -.35rem;
+          transition: all 1s ease;
+          @extend %white-bg;
+        }
+
+        &:before {
+          left: -.35rem;
+          height: .1rem;
+          width: 0;
+        }
+
+        &:after {
+          left: -.35rem;
+          width: .1rem;
+          height: 0;
+        }
+
+        &:hover:before {
+          animation: slide-width .4s linear .25s  forwards;
+        }
+
+        &:hover:after {
+          animation: slide-height .4s linear .25s forwards;
+        }
+
+      }
+    }
+  }
+}
+@media (max-width: 1920px) {
+  .statistics-with-bg {
+    padding-top: 6 * $baseline;
+    padding-bottom: 6 * $baseline;
+  }
+}
+
+@media (max-width: 767px) {
+  .statistics-with-bg .statistics .stat {
+    width: 50%;
+    margin-bottom: $element_offset;
+
+    &:nth-child(3),
+    &:nth-child(4){
+      margin-bottom: 0;
+    }
+
+  }
+
+  .statistics-with-bg .statistics {
+    flex-wrap: wrap;
+  }
+
+  .statistics-with-bg {
+    padding-top: $element_offset;
+    padding-bottom:  $element_offset;
+  }
+}

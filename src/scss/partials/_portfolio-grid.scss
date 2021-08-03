@@ -1,0 +1,68 @@
+/*------------------------------------------------------------------------------------------------------------------
+Portfolio Grid
+------------------------------------------------------------------------------------------------------------------*/
+.grid {
+  @extend %element_offset; 
+  
+  .animated{
+    animation-duration: 1s !important;
+  }
+
+  .lazy{
+    @extend %opacity-0;
+  }
+
+  .gallery-item {
+    height: auto;
+
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: calc(100% / 1.5);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation-delay: 0s !important;
+        @include object-fit;
+        @extend %grey-blue-bg;
+      }
+      
+       h2 {
+        max-width: 80%;
+        text-align: center;
+      }
+
+      p {
+        @extend %grey-lgt-clr;
+      }
+
+      @media (max-width: 480px) {
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom:  $element_offset / 2;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom:  $element_offset / 2;
+  }
+}
+
+

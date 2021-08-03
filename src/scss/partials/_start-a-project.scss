@@ -1,0 +1,152 @@
+/*------------------------------------------------------------------------------------------------------------------
+Start a Project Page
+------------------------------------------------------------------------------------------------------------------*/
+.start-a-project {
+  @extend %element_offset;
+
+  .alert-p{
+    margin-bottom: $baseline;
+  }
+
+  .step {
+    @extend %element_offset;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .project-services {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-check {
+      width: 100%;
+      margin-bottom:  $element_offset / 4;
+      position: relative;
+      height: $element_offset;
+      padding-left: 0; 
+      transition: all 1s ease-in-out;
+      @extend %grey-lgt-bg;
+
+      &:hover {
+        @extend %grey-lgt-bg;
+      }
+
+      &:hover > label {
+        color: rgba(0,0,0,.6);
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+        width: 50%;
+      }
+
+      span {
+        margin-left: 6rem;
+      }
+
+      input[type="checkbox"]:checked + label {
+        color: rgba(0,0,0,.6);
+        @extend %main-bg;
+      }
+    }
+  }
+
+  .form-wrap{
+    .form-check,
+    .row [class^="col-"],
+    .w-100 {
+      @extend %element_offset_small;
+    }
+
+    .row [class^="col"]:first-child {
+      padding-right:  $element_offset / 4;
+    }
+
+    .row [class^="col"]:last-child {
+      padding-left:  $element_offset / 4;
+    }
+  }
+
+  #submit-btn {
+    padding:  $element_offset / 4  $element_offset / 2;
+    @extend %transition-35;
+
+    i {
+      @extend %font-09;
+    }
+  }
+
+  .form-group,
+  .form-control {
+    color: #607d8b;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: none;
+    border-bottom: 1px solid $grey-lgt;
+    box-shadow: 0 1px 0 0 $grey-lgt;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+@media (max-width: 767px) {
+  .start-a-project .form-wrap .col {
+    width: 100% !important;
+  }
+  .start-a-project .form-wrap .row [class^="col"] {
+    margin-bottom: $element_offset / 2;
+    padding: 0 !important;
+  }
+  .start-a-project .form-wrap .row + .col {
+    flex-wrap: wrap;
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .start-a-project .project-services .form-check {
+    width: 100% !important;
+    margin-right: 0;
+    margin-bottom:  $element_offset / 2;
+  }
+}
+
+@media (min-width: 481px) {
+  .start-a-project .project-services .form-check {    
+    width: calc(50% - #{$element_offset} / 4);
+  }
+  .start-a-project .project-services .form-check:nth-child(odd) {
+    margin-right:  $element_offset / 4;
+  }
+}
+
+@media (max-width: 360px) {
+  .start-a-project .project-services .form-check span {
+    margin-left: 6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.non-animated {
+  opacity: 1 !important;
+}

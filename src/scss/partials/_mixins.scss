@@ -1,0 +1,345 @@
+
+/*------------------------------------------------------------------------------------------------------------------
+Different helpful classes and mixins
+------------------------------------------------------------------------------------------------------------------*/
+@mixin flex-center{ 
+  display: flex;  
+  justify-content: center;  
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@mixin object-fit{
+  overflow: hidden;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+}
+
+@mixin sticky{
+  top: 5rem;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: -ms-sticky !important;
+  position: -o-sticky !important;
+}
+
+@mixin position-absolute{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin shadow-tb{
+  box-shadow: 0 -3px 5px -3px rgba(0, 0, 0, 0.25), 0 3px 5px -3px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-card{
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,.18),0 4px 6px 0 rgba(0,0,0,.15)!important;
+
+  &:hover{
+     box-shadow: 0 8px 12px 0 rgba(0,0,0,.2), 0 6px 16px 0 rgba(0,0,0,.19) !important;
+  }
+}
+
+@mixin box-shadow{
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.2);
+}
+
+
+@mixin social{
+    display: flex;
+    justify-content: flex-start;
+
+    div{
+      position: relative;
+      @extend %opacity-0;
+    }
+
+    a{
+       position: relative;
+       display: block;
+       z-index: 15;
+    }
+
+    i{
+      margin-right: .6em; 
+      max-width: 100%;  
+      width: 2em;
+      height: 2em;
+      transition: all .5s ease-in-out;
+      @include flex-center;
+      @extend %dark-bg;
+      @extend %white-clr;
+
+      &:hover {
+        @extend %main-bg;
+      }
+    }
+}
+
+@mixin img-hover{
+  opacity: .8;
+  transition: all .35s ease-out;
+
+  &:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all .6s ease-in;
+  }
+}
+/*---------------------------------Classes--------------------------------*/
+
+figure{
+  img{
+    width: 100%;
+    height: 100%;
+    @include object-fit;
+  }
+}
+
+.opacity-0 {
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0.5;
+  opacity: 0 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.fixed-to-bottom {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.content-center {
+  @include flex-center;
+}
+
+.mb-1{
+  margin-bottom: $baseline !important;
+}
+
+.mb-10 {
+  @extend %section_offset;
+}
+
+.pb-10 {
+  padding-bottom: $section_offset;
+}
+
+.pb-5 {
+  padding-bottom: $element_offset;
+}
+
+.py-50 {
+  padding-bottom: 50px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mx-0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.px-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.fixedsticky {
+  display: block;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: -ms-sticky !important;
+  position: -o-sticky !important;
+  top: 5rem;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+.to-top {
+  transform: translateY(-100%);
+  position: absolute !important;
+  right: 0;
+  width: auto !important;
+}
+
+@media (min-width: 1361px) {
+  .to-top {
+    right: 0;
+    position: relative !important;
+    float: right;
+  }
+}
+
+@media (max-width: 1360px) {
+  .to-top {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .to-top {
+    transform: translateY(0);
+    margin-top: ($lh / 2) * 1rem;
+  }
+}
+
+.hoverable {
+  transition: box-shadow .45s ease;
+
+  &:hover {
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.2);
+  }
+}
+
+/*---------------------------Numbers Owl's dots-------------------------------*/
+.owl-dot {
+  margin-right: ($lh / 3) * 1rem;
+  @extend %font-08;
+  @extend %header-font;
+}
+
+.owl-dot.active { 
+  color: $main-clr !important;
+  text-decoration: underline;
+}
+
+.owl-theme .owl-dots {
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: ($lh) * 1rem;
+}
+
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+/*------------------------------Mask--------------------------------------*/
+.view .mask {
+  background-attachment: fixed;
+}
+
+.view .mask,
+.view .full-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view img, .view video {
+  display: block;
+  position: relative;
+}
+
+.hm-black-strong .mask,
+.hm-black-strong .full-bg-img {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hm-black-lgt .mask,
+.hm-black-lgt .full-bg-img {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rgba-black-strong {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/*------------------------------Rounding----------------------------------*/
+
+@function decimal-round ($number, $digits: 0, $mode: round) {
+    $n: 1;
+    // $number must be a number
+    @if type-of($number) != number {
+        @warn '#{ $number } is not a number.';
+        @return $number;
+    }
+    // $digits must be a unitless number
+    @if type-of($digits) != number {
+        @warn '#{ $digits } is not a number.';
+        @return $number;
+    } @else if not unitless($digits) {
+        @warn '#{ $digits } has a unit.';
+        @return $number;
+    }
+    @if $digits > 0 {
+        @for $i from 1 through $digits {
+            $n: $n * 10;
+        }
+    }
+    @if $mode == round {
+        @return round($number * $n) / $n;
+    } @else if $mode == ceil {
+        @return ceil($number * $n) / $n;
+    } @else if $mode == floor {
+        @return floor($number * $n) / $n;
+    } @else {
+        @warn '#{ $mode } is undefined keyword.';
+        @return $number;
+    }
+}
+
+.dash-bordered {
+  position: relative;
+  display: inline-block;
+  padding: $baseline;
+  border: dashed 2px #000; 
+  border-image-slice: 2;
+  border-image-repeat: round;  
+  border-image: url(../img/dash.png) 2 round;
+
+  &:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -11px;
+    top: -3px;
+    transform: translateY(-70%);
+    background: url(../img/coupon-20.png);
+  }
+}
+
+.badge-accent{
+  font-weight: 400;
+  @extend %accent-bg;
+  @extend %dark-clr;
+}

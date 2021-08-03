@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------------------------------------------------------
+News Section for Home Page
+------------------------------------------------------------------------------------------------------------------*/
+#news {
+  @extend %section_offset;
+
+  .post img{
+  	@extend %opacity-toggle;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  #news {
+    margin-bottom: 7.5rem;
+  }
+  #news .post {
+    margin-bottom:  $element_offset / 2;
+  }
+}

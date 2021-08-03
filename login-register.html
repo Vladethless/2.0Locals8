@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<title>Login / Register Page.</title> 
+		<meta name="description" content="Login / Register Page. Leitmotiv - responsive multipage HTML5 Template"/>
+		
+		 <!-- Farvicon -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+		<meta name="format-detection" content="telephone=no"/>
+		<!--vendor's styles-->
+		<link rel='stylesheet' href='css/all.min.css' />
+		<!-- custom styles -->
+		<link rel='stylesheet' href='css/style.min.css' />
+	</head>
+	<body>
+		 <!-- preloader -->
+		<div class="preloader-backdrop">
+			<div class="preloader-wrap">
+				<svg width="36" height="36" class="border-loading-indicator">
+					<rect width="36" height="36" class="path" style="fill:transparent; stroke-width:16; stroke:#ae8c64;"/>
+				</svg>
+				<div class="loading">Loading&#8230;</div>
+			</div>
+		</div>
+		<!-- end of preloader -->
+		<div class="login-register-wrap view hm-black-strong">
+			<div class="content">
+				<!-- login-register -->
+				<div class="login-register">
+					<div class="container-fluid px-0">
+						<div class="row no-gutters">
+							<div class="lr-image col-lg-5 view hm-black-lgt">
+								<h4>Welcome to Leitmotiv!</h4>
+								<div class="mask"></div>
+							</div>
+							<div class="lr-tabs col-lg-7">
+								<ul class="nav nav-tabs" id="login-register-tab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><h2>Login</h2></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false"><h2>Registration</h2></a>
+									</li>
+								</ul>
+								<div class="tab-content" id="login-register-tabContent">
+									<div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="login-tab">
+										<form id="login-form" class="container-fluid px-0">
+											<div class="messages"></div>
+											<div class="form-row">
+												<div class="form-group form-border">
+													<input type="email" id="lr-email" class="form-control" placeholder="Email*" data-error="Valid email is required." required>
+													<div class="help-block with-errors"></div>
+												</div>
+												<div class="form-group form-border">
+													<input type="text" id="lr-password" class="form-control" placeholder="Password*" data-error="Firstname is required." required>
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+											<div class="info-row">
+												<div class="form-col">
+													<!-- Remember me -->
+													<div class="checkbox-form">
+														<input type="checkbox" name="remember" id="loginFormRemember">
+														<label for="loginFormRemember">Remember me</label>
+													</div>
+												</div>
+												<div class="form-col">
+													<!-- Forgot password -->
+													<a href="">Forgot password?</a>
+												</div>
+											</div>
+				
+											<!-- Sign in button -->
+											<button class="btn btn-ltv btn-block my-4" type="submit"><span>Sign in</span></button>
+				
+											<div class="info-row">
+												<!-- Register -->
+												<p class="form-col">Not a member?
+													<a id="register-link" href="#pills-register" >Register</a>
+												</p>
+				
+												<!-- Social login -->
+												<div class="form-col d-flex">
+													<p>or sign in with:</p>
+				
+													<a class="social-icon mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
+														<i class="fa fa-facebook"></i>
+													</a>
+													<a class="social-icon mx-2" data-toggle="tooltip" data-placement="top" title="Twitter">
+														<i class="fa fa-twitter"></i>
+													</a>
+													<a class="social-icon mx-2" data-toggle="tooltip" data-placement="top" title="Linkedin">
+														<i class="fa fa-linkedin"></i>
+													</a>
+													<a class="social-icon mx-2" data-toggle="tooltip" data-placement="top" title="Github">
+														<i class="fa fa-github"></i>
+													</a>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="register-tab">
+										<form id="register-form" class="container-fluid px-0">
+											<div class="messages"></div>
+											<div class="form-row">
+												<div class="form-group form-border">
+													<input type="text" id="lr-first-name" class="form-control" placeholder="First Name*" data-error="Valid email is required." required>
+													<div class="help-block with-errors"></div>
+												</div>
+												<div class="form-group form-border">
+													<input type="text" id="lr-last-name" class="form-control" placeholder="Last Name*" data-error="Firstname is required." required>
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group form-border">
+													<input type="email" id="lr-email" class="form-control" placeholder="Email*" data-error="Valid email is required." required>
+													<div class="help-block with-errors"></div>
+												</div>
+												<div class="form-group form-border">
+													<input type="text" id="lr-password" class="form-control" placeholder="Password*" data-error="Firstname is required." required>
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+											<!-- Newsletter -->
+											<div class="checkbox-form info-row">
+												<input type="checkbox" name="register" id="registerFormNewsletter" checked>
+												<label for="registerFormNewsletter">Subscribe to our newsletter</label>
+											</div>
+				
+											<!-- Sign up button -->
+											<button class="btn btn-ltv my-4 btn-block" type="submit"><span>Sign in</span></button>
+				
+											<!-- Social register -->
+											<div class="d-flex info-row">
+												<div class="d-flex form-col">
+													<p>or sign up with:</p>
+				
+													<a href="#0" class="social-icon  mx-2">
+														<i class="fa fa-facebook-f"></i>
+													</a>
+													<a chref="#0" class="social-icon  mx-2">
+														<i class="fa fa-twitter"></i>
+													</a>
+													<a href="#0" class="social-icon  mx-2">
+														<i class="fa fa-linkedin"></i>
+													</a>
+													<a href="#0" class="social-icon  mx-2">
+														<i class="fa fa-github"></i>
+													</a>
+												</div>
+											</div>
+				
+											<!-- Terms of service -->
+											<div class="info-row-small form-col">
+												<p>By clicking
+													<strong class="main-clr">Sign up</strong> you agree to our
+													<a href="" target="_blank">terms of service</a>
+												</p>
+											</div>
+				  
+										</form>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/ login-register -->
+				
+			</div>
+			<div class="mask"></div>
+		</div><!--/end of content-wrap-->
+		<!--top nav -->
+		<div id="shop-top-nav-horizontal" class="fixed-top">
+			<!--Navbar-->  
+			<div class="logo"></div>
+			<!-- Navbar brand -->
+			<a class="navbar-brand" href="index.html">Leitmotiv</a>
+				<!--Navbar-->
+			<nav class="navbar navbar-expand-lg">
+				<!-- collapse button -->
+				<button type="button" class="hamburger is-closed navbar-toggler" data-toggle="collapse" data-target="#h-nav" aria-expanded="false" aria-label="Menu">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+				<!-- end of collapse button -->
+				<!-- Collapsible content -->
+				<div id="h-nav" class="collapse navbar-collapse">
+					<div id="shop-horizontal-nav">
+						<!-- Links -->
+						<ul class="navbar-nav">
+							<li class="active dropdown">
+								<a href="#" class="dropdown-toggle" id="home-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home <span class="sr-only">(current)</span> </a>
+								<div class="dropdown-menu" aria-labelledby="home-link">
+									<ul>
+										<li><a href="index.html">Home v1.</a></li>
+										<li><a href="home-v2-horizontal-nav.html">Home v2. Horizontal Nav</a></li>
+										<li><a href="home-v3-company.html">Home v3.</a></li>
+										<li><a href="home-v4-blog.html">Home v4. Home Blog</a></li>
+										<li><a href="home-v5.html">Home v5.</a></li>
+										<li><a href="home-v6-shop.html">Home v6. Shop <span class="badge badge-pill badge-accent">New</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+								<div class="dropdown-menu" aria-labelledby="about-link">
+									<ul>
+										<li><a href="about.html">About us</a></li>
+										<li><a href="team.html">Team v1</a></li>
+										<li><a href="team-v2.html">Team v2</a></li>
+										<li><a href="personal-page.html">Personal Page</a></li>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="contacts.html">Contact</a></li>
+										<li><a href="page-404.html">404</a></li>
+										<li><a href="start-a-project.html">Start a Project</a></li>
+										<li><a href="elements-typography.html">Typography</a></li>
+										<li><a href="elements-images.html">Images</a></li>
+										<li><a href="elements-components.html">Components <span class="badge badge-pill badge-accent">New</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" id="service-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+								<div class="dropdown-menu" aria-labelledby="service-link">
+									<ul>
+										<li><a href="services.html">Services v1</a></li> 
+										<li><a href="services-2.html">Services v2</a></li>
+										<li><a href="services-3.html">Services v3</a></li>
+										<li><a href="service.html">Service </a></li>
+									</ul>
+								</div>
+							</li>
+							<!-- Dropdown -->
+							<li class="dropdown mega-dropdown">
+								<a href="#" class="dropdown-toggle" id="portfolio-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+								<div class="dropdown-menu mega-dropdown-menu" aria-labelledby="portfolio-link">
+									<div class="mdm-row">
+										<div class="mdm-col">
+											<h5>Portfolio with 1 column</h5>
+											<ul>
+												<li><a href="portfolio-listing.html">Portfolio Listing <span class="badge badge-pill badge-accent">New</span></a></li>
+												<li><a href="portfolio-default.html">Portfolio default</a></li>
+											</ul>
+										</div>
+										<div class="mdm-col">
+											<h5>Portfolio grid with 3 column</h5>
+											<ul>
+											<li><a href="portfolio-grid-3-v1.html">Portfolio grid v1, 3 columns</a></li>
+											<li><a href="portfolio-grid-3-v2.html">Portfolio grid v2, 3 columns</a></li>
+											<li><a href="portfolio-grid-with-gutters-3-v1.html">Portfolio grid with gutters v1</a></li>
+											<li><a href="portfolio-grid-with-gutters-3-v2.html">Portfolio grid with gutters v2</a></li>
+											 </ul>
+										</div>
+										<div class="mdm-col">
+											<h5>Portfolio grid with 2 columns</h5>
+											<ul>
+											<li><a href="portfolio-grid-2-v1.html">Portfolio grid v1, 2 columns</a></li>
+											<li><a href="portfolio-grid-2-v2.html">Portfolio grid v2, 2 columns</a></li>
+											</ul>
+										</div>
+										<div class="mdm-col">
+											<h5>Portfolio Masonry</h5>
+											<ul>
+											<li><a href="portfolio-masonry-v1.html">Portfolio masonry v1</a></li>
+											<li><a href="portfolio-masonry-v2.html">Portfolio masonry v2</a></li>
+											</ul>
+										</div>
+										<div class="mdm-col">
+											<h5>Portfolio</h5>
+											<ul>
+											<li><a href="portfolio-cards-v1.html">Portfolio grid with cards</a></li>
+											<li><a href="portfolio-horizontal.html">Portfolio horizontal</a></li>
+											</ul>
+										</div>
+										<div class="mdm-col">
+											<h5>Portfolio justified</h5>
+											<ul>
+												<li><a href="portfolio-justified-v1.html">Portfolio justified v1</a></li>
+												<li><a href="portfolio-justified-v2.html">Portfolio justified v2</a></li>
+											</ul>
+										</div>
+										<div class="mdm-col">
+											<h5>Galleries</h5>
+											<ul>
+												<li><a href="portfolio-single-page.html">Single gallery v1. Image Grid.</a></li>
+												<li><a href="portfolio-single-page-2.html">Single gallery v2. Slider.</a></li>
+												<li><a href="portfolio-single-page-3.html">Single gallery v3. Image grid with gutters.</a></li>
+												<li><a href="portfolio-single-page-4.html">Single gallery v5. Owl carousel.</a></li>
+												<li><a href="portfolio-single-page-5.html">Single gallery v5. Justified gallery.</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+								<div class="dropdown-menu" aria-labelledby="shop-link">
+									<ul>
+										<li><a href="shop-sidebar-left.html">Shop with left sidebar <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="shop-sidebar-right.html">Shop with right sidebar <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="shop-sidebar-without.html">Shop <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="product-detail.html">Product detail <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="login-register.html">Login / Register <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="cart.html">Cart <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="checkout.html">Checkout <span class="badge badge-pill badge-accent">New</span></a></li>
+										<li><a href="wishlist.html">Wishlist <span class="badge badge-pill badge-accent">New</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" id="blog-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<div class="dropdown-menu" aria-labelledby="blog-link">
+									<ul>
+										<li><a href="blog-left-sidebar.html">Blog with left sidebar</a></li>
+										<li><a href="blog-right-sidebar.html">Blog with right sidebar</a></li>
+										<li><a href="blog-single.html">Blog single</a></li>
+										<li><a href="blog-single-video.html">Single blog with video</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<!-- Links -->
+					</div>
+				</div>
+				<!-- Collapsible content -->
+			</nav>
+			<!--/.Navbar-->
+			<div class="holder">
+				<div class="shop-btn-wrap">
+					<a href="login-register.html" class="profile">
+						<i class="fa fa-user"></i>
+					</a>
+					<a href="wishlist.html" class="btn-wishlist">
+						<i class="fa fa-heart"></i>	
+					</a>
+					<a href="#0" class="btn-cart">
+						<i class="fa fa-shopping-bag"></i>
+						<span class="cart-count">2</span>
+					</a>
+				</div>
+			</div>
+			<!-- end of horizontal nav-->
+			<!--shopping-cart panel-->
+			<div id="shopping-cart" class="cart">
+				<div class="sc-header">
+					<div class="sc-collapse" >
+						<i class="fa fa-long-arrow-right"  title="Collapse Cart" data-toggle="tooltip" data-placement="top"></i>
+					</div>
+					<div class="sc-cart-total">
+						<p><span class="hyphen-right">Total</span>$979.98</p>
+					</div>
+				</div> <!-- cd-header -->
+				<!-- cd-cart-items -->
+				<ul class="shopping-cart-items">
+					<li>
+						<figure><img src="./images/items/item-1.jpg" alt="item name"></figure>
+						<div class="item-info">
+							<span class="item-name">Wooden Bar Stool</span>
+							<span class="item-price">$187</span>
+							<span class="item-quantity">Quantity: 01</span>
+							<!--Close Icon-->
+							<button type="button" class="close"> 
+								<span>×</span> 
+							</button> 
+						</div>
+					</li>
+					<li>
+						<figure><img src="./images/items/item-2.jpg" alt="item name"></figure>
+						<div class="item-info">
+							<span class="item-name">Tweed Chair</span>
+							<span class="item-price">$129.99</span>
+							<span class="item-quantity">Quantity: 01</span>
+							<!--Close Icon-->
+							<button type="button" class="close"> 
+								<span>×</span> 
+							</button> 
+						</div>
+					</li>
+				</ul> 
+				<!-- /cd-cart-items -->
+				<div class="btn-wrap">
+					<a href="cart.html" class="btn btn-ltv checkout-btn"><span>Cart</span></a>
+					<a href="checkout.html" class="btn btn-ltv checkout-btn"><span>Checkout</span></a>
+					<p class="sc-collapse"><a href="#0">Continue Shopping</a></p>
+				</div>
+			</div> <!-- cd-cart -->
+			<!--/shopping-cart panel-->
+			
+			
+		</div>
+		<!-- end of  top nav-->
+		
+		<!--================================JS=================================-->
+		<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+		<script src="js/plugins.js"></script>
+		<!--removeIf(dev)-->
+		<script src="js/main.js"></script>
+		<!--endRemoveIf(dev)-->
+		
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,121 @@
+/*------------------------------------------------------------------------------------------------------------------
+Latest Projects for Home Page
+------------------------------------------------------------------------------------------------------------------*/
+#latest-projects {
+  position: relative;
+  @extend %section_offset;
+}
+
+#latest-projects .project {
+  overflow: hidden; 
+  transform: translateX(0);
+  @extend %opacity-0;
+}
+
+#latest-projects .project figure {
+  position: relative;
+  width: 100%;
+}
+
+#latest-projects .project figure img {
+  width: 100%;
+  @include object-fit;
+  @extend %grey-lgt-bg;
+}
+
+@media (min-width: 576px) {
+  #latest-projects .project figure img {
+    height: 12 * $baseline;
+  }
+  #latest-projects .project figure img img {
+    height: 12 * $baseline;
+  }
+}
+
+// @media (max-width: 1024px) {
+//   #latest-projects .project figure img {
+//     height: 12 * $baseline;
+//   }
+//   #latest-projects .project figure img img {
+//     height: 12 * $baseline;
+//   }
+// }
+@media (max-width: 575px) {
+  #latest-projects .project figure img {
+    height: 9 * $baseline;
+  }
+  #latest-projects .project figure img img {
+    height: 9 * $baseline;
+  }
+}
+
+#latest-projects .project figure figcaption {
+  position: absolute;
+  top: $baseline / 3;
+  bottom: $baseline / 3;
+  left: $baseline / 3;
+  right: $baseline / 3;  
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  transform-origin: .5rem 0;
+  transform: translateX(-100%); 
+  transition: all .5s ease;
+  opacity: 0;
+  padding:  $element_offset / 2 1.5rem;
+  @extend %dark-bg;
+  @extend %white-clr;
+}
+
+#latest-projects .project figure figcaption a {  
+  transition: all 1s ease;
+}
+
+#latest-projects .project figure figcaption a:hover > h3 {  
+  @extend %main-clr;
+}
+
+#latest-projects .project figure figcaption h3 {
+  margin-bottom: $baseline / 2;
+  @extend %white-clr;
+}
+
+#latest-projects .project figure figcaption p,
+#latest-projects .project figure figcaption data,
+#latest-projects .project figure figcaption time,
+#latest-projects .project figure figcaption .date {
+  margin-bottom: 0;
+  @extend %grey-md-clr;
+}
+
+#latest-projects .project figure figcaption h3,
+#latest-projects .project figure figcaption p,
+#latest-projects .project figure figcaption data,
+#latest-projects .project figure figcaption time,
+#latest-projects .project figure figcaption .date {
+  width: 100%;
+}
+
+#latest-projects .project figure figcaption p {
+  text-transform: capitalize;
+}
+
+#latest-projects .project figure:hover > figcaption {
+  transform: translateX(0%);
+  opacity: .9;
+}
+
+#latest-projects .__loading {
+  opacity: 0;
+  animation: fadeOut .5s ease-out;
+}
+/*-----------------------------Our works-------------------------------*/
+
+.our-works {
+  width: 100%;
+  margin-bottom: 5rem !important;
+}
+
+.our-works .to-top {
+  right: 1rem;
+}

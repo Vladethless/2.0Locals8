@@ -1,0 +1,175 @@
+<!--checkout -->
+<div id="checkout">
+	<div class="container-fluid px-0">
+		<div class="row">
+			<div class="billing col-lg-8"><h2>Billing Address</h2>
+				<form id="billing-form" class="container-fluid px-0 fixedsticky">
+					<div class="messages"></div>
+					<div class="form-row">
+						<div class="form-group form-border">
+							<input type="text" id="checkout-first-name" class="form-control" placeholder="First Name*" data-error="First Name is required." required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group form-border">
+							<input type="text" id="checkout-last-name" class="form-control" placeholder="Last Name*" data-error="Last Name is required." required>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group form-border">
+							<input type="email" id="checkout-email" class="form-control" placeholder="Email*" data-error="Valid email is required." required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group form-border">
+							<input type="text" id="checkout-company" class="form-control" placeholder="Company" >
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					<div class="form-group form-border">
+						<input type="text" id="checkout-address" class="form-control" placeholder="Address*" data-error="Address is required." required>
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-row">
+						<div class="form-group form-border">
+							<div class="select-wrap">
+								<select class="m-select">
+									<option selected>Country*</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group form-border">
+							<div class="select-wrap">
+								<select class="m-select">
+									<option selected>City / Town*</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group form-border">
+							<input type="text" id="checkout-state" class="form-control" placeholder="State*" data-error="State is required." required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group form-border">
+							<input type="text" id="checkout-zip" class="form-control" placeholder="Zip Code*" data-error="Zip Code is required." required>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					<div class="info-row">
+						<div class="form-col">
+							<div class="checkbox-form">
+								<input type="checkbox" name="remember" id="create-account">
+								<label for="create-account">Create An Acount?</label>
+							</div>
+						</div>
+						<div class="form-col">
+							<div class="checkbox-form">
+								<input type="checkbox" name="remember" id="shipping-address" data-toggle='collapse' data-target='#shipping-address-block'>
+								<label for="shipping-address">Ship To Different Address</label>
+							</div>
+						</div>
+					</div>
+					<div id="shipping-address-block" class="collapse">
+						<h2>Shipping Address</h2>
+						<div class="form-row">
+							<div class="form-group form-border">
+								<input type="text" id="shipping-checkout-first-name" class="form-control" placeholder="First Name*" data-error="First Name is required." required>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group form-border">
+								<input type="text" id="shipping-checkout-last-name" class="form-control" placeholder="Last Name*" data-error="Last Name is required." required>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group form-border">
+								<input type="email" id="shipping-checkout-email" class="form-control" placeholder="Email*" data-error="Valid email is required." required>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group form-border">
+								<input type="text" id="shipping-checkout-company" class="form-control" placeholder="Company" >
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-group form-border">
+							<input type="text" id="shipping-checkout-address" class="form-control" placeholder="Address*" data-error="Address is required." required>
+							<div class="help-block with-errors"></div>
+						</div>			
+						<div class="form-row">
+							<div class="form-group form-border">
+								<div class="select-wrap">
+									<select class="m-select">
+										<option selected>Country*</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group form-border">
+								<div class="select-wrap">
+									<select class="m-select">
+										<option selected>City / Town*</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group form-border">
+								<input type="text" id="shipping-checkout-state" class="form-control" placeholder="State*" data-error="State is required." required>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group form-border">
+								<input type="text" id="shipping-checkout-zip" class="form-control" placeholder="Zip Code*" data-error="Zip Code is required." required>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="cart-info" class="col-lg-4">
+				<h2><span>Cart Total</span><span>(4)</span></h2>
+				<div class="cart-total">
+					<ul class="in-cart">
+						<li><span class="item-name">Wooden Bar Stool</span> <span class="item-price">$374</span></li>
+						<li><span class="item-name">Tweed Chair</span> <span class="item-price">$129.99</span></li>
+						<li><span class="item-name">Wooden Coffee Table</span> <span class="item-price">$250</span></li>
+					</ul>
+					<p><span class="in-cart-sub-header">Sub Total</span><span class="in-cart-sub-sum">$753.99</span></p>
+					<p><span class="in-cart-sub-header">Shipping Fee</span><span class="in-cart-sub-sum">$0</span></p>
+					<h4><span class="in-cart-sub-header">Total</span><span class="in-cart-sub-sum">$753.99</span></h4>
+				</div>
+				<h2>Payment Methods</h2>
+				<div class="payment-methods-list">
+					<div class="radio-box">
+						<input id="bank-transfer" type="radio" name="payment-method" checked>
+						<label for="bank-transfer">Direct Bank Transfer</label>
+					</div>
+					<div class="radio-box">
+						<input id="cash" type="radio" name="payment-method">
+						<label for="cash">Cash On Delivery</label>
+					</div>
+					<div class="radio-box">
+						<input id="paypal" type="radio" name="payment-method">
+						<label for="paypal">PayPal</label>
+					</div>
+					<div class="radio-box">
+						<input id="card" type="radio" name="payment-method">
+						<label for="card">Credit Card</label>
+					</div>
+				</div>
+				<a href="#0" class="btn btn-ltv btn-block"><span>Place Order</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /checkout-->

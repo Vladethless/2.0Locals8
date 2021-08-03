@@ -1,0 +1,54 @@
+.preloader-backdrop {
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  z-index: 1040;
+  position: fixed;
+  max-width: 100%;
+  @include flex-center;
+  @extend %dark-bg;
+}
+
+.loading {
+  color: $grey-lgt;
+  margin-top:  $element_offset / 6;
+  font-size: .8rem;
+  letter-spacing: 0.16rem;
+  @extend %header-font;
+}
+
+/*** Animations / styles ***/
+.border-loading-indicator {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.path {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150px;
+  animation: dash 1.4s ease infinite;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-o-keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}

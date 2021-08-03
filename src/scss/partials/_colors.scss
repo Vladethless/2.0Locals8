@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------------------------------------------------------
+Colors
+------------------------------------------------------------------------------------------------------------------*/
+/*# [Color codes]
+
+# Dark grey (text): #222
+# Main Color - Brown (headings, links) #ae8c64
+# Accent - Buttons Hover State #d4e157
+# Lgt grey - for backgriunds and text on dark bg #ddd
+# Grey - additional text and elements #4b626d
+*/
+
+$main-clr: #ae8c64;
+$dark-clr: #222;
+$accent-clr: #dce775;
+// $accent-clr: #92d39f;
+$grey-blue: #4b626d; //for text
+$grey-lgt: #ddd; //for bg
+$grey-md: #ccc;
+$error-clr: #F44336;
+$white-clr: #fff;
+
+.main-clr,
+%main-clr {
+  color: $main-clr;
+}
+.main-bg,
+%main-bg {
+  background: #ae8c64;
+}
+.dark-clr,
+%dark-clr{
+	color: $dark-clr;
+}
+.dark-bg,
+%dark-bg {
+  background: $dark-clr;
+}
+.white-bg,
+%white-bg {
+  background: #fff;
+}
+
+%hm-black-custom {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.accent-clr,
+%accent-clr {
+  color: $accent-clr;
+}
+.accent-bg,
+%accent-bg {
+  background-color: $accent-clr;
+}
+.grey-lgt-clr,
+%grey-lgt-clr{
+	color: $grey-lgt;
+}
+.grey-lgt-bg,
+%grey-lgt-bg{
+	background: $grey-lgt;
+}
+
+%error-clr{
+	color: $error-clr;
+}
+.grey-blue-clr,
+%grey-blue-clr{
+	color: $grey-blue;
+}
+.grey-blue-bg,
+%grey-blue-bg{
+	background: $grey-blue;
+}
+
+%grey-md-clr{
+	color: $grey-md; 
+}
+
+%grey-md-bg{
+	background: $grey-md;
+}
+.white-clr,
+%white-clr{
+	color: #fff;
+}
+
+%white-bg{
+	background: #fff;
+}

@@ -1,0 +1,134 @@
+/*------------------------------------------------------------------------------------------------------------------
+Footer Contact Form
+------------------------------------------------------------------------------------------------------------------*/
+.footer-form {
+  width: 100%;
+  position: relative;  
+  overflow: hidden;
+  padding-top: 3 * $baseline;
+  padding-bottom: 3 * $baseline;
+  @include shadow-tb;
+  @extend %dark-bg;
+
+  &.animated{
+    @extend %animated-08s;
+    @extend %opacity-0;
+  }
+
+  .animated{
+    @extend %opacity-0;
+  }
+}
+
+.footer-form .get-in-touch {
+  width: 50%;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .footer-form .get-in-touch {
+    width: 80%;
+    margin: 0 auto;
+    transform: translateX(0); 
+  }
+}
+
+.footer-form .get-in-touch input::placeholder,
+.footer-form .get-in-touch textarea::placeholder {
+  color: $grey-lgt;
+}
+
+.footer-form .get-in-touch input:-webkit-autofill,
+.footer-form .get-in-touch input:-webkit-autofill:hover,
+.footer-form .get-in-touch input:-webkit-autofill:focus input:-webkit-autofill,
+.footer-form .get-in-touch textarea:-webkit-autofill,
+.footer-form .get-in-touch textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+.footer-form .get-in-touch select:-webkit-autofill,
+.footer-form .get-in-touch select:-webkit-autofill:hover,
+.footer-form .get-in-touch select:-webkit-autofill:focus {
+  border: none;
+  border-bottom: 1px solid $grey-lgt;  
+  box-shadow: 0 1px 0 0 $grey-lgt;  
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.footer-form .get-in-touch h3 {
+  margin-bottom:  $element_offset;
+  @extend %white-clr;
+}
+
+.footer-form .get-in-touch .form-row {
+  padding: 0 $baseline;
+}
+
+@media (max-width: 479px) {
+  .footer-form .get-in-touch .form-row {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer-form .get-in-touch .form-row .col input {  
+  box-sizing: border-box;
+}
+
+.footer-form .get-in-touch .form-row .col input:focus {
+  background: #333;
+}
+
+.footer-form .get-in-touch .form-row .col textarea {
+  padding: $baseline / 2 0;
+  @extend %white-clr;
+}
+
+.footer-form .get-in-touch .form-row .col textarea:focus {
+  background: #333;
+  @extend %white-clr;
+}
+
+@media (max-width: 479px) {
+  .footer-form .get-in-touch .form-row .col {
+    width: 100%;
+    margin-bottom: $element_offset;
+  }
+}
+
+.footer-form .get-in-touch .form-row .col:first-child {
+  margin-right: 1.8rem;
+}
+
+.footer-form .get-in-touch .form-row .git-submit-btn-wrap {
+  align-self: flex-end;
+}
+
+.footer-form .get-in-touch .form-row .git-submit-btn-wrap .git-submit-btn {
+  border-radius: 50%;  
+  margin-bottom: 0;
+  width: 3rem;
+  height: 3rem;
+  transition: background .4s ease-in-out;
+  @include flex-center;
+  @extend %white-bg;
+}
+
+.footer-form .get-in-touch .form-row .git-submit-btn-wrap .git-submit-btn:hover {
+  animation: shadow-inset-center 0.25s ease-in-out both;
+  @extend %main-bg;
+}
+
+.footer-form .get-in-touch .form-row .git-submit-btn-wrap .git-submit-btn i {
+  z-index: 4;
+  @extend %dark-clr;
+}
+
+.footer-form .get-in-touch .form-row .git-submit-btn-wrap .git-submit-btn i:hover {
+  @extend %dark-clr;
+}
+
+@media (max-width: 479px) {
+  .footer-form .get-in-touch .form-row .git-submit-btn-wrap .git-submit-btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
