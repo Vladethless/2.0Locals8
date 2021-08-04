@@ -4207,17 +4207,26 @@ button {
 .draw:hover::before {
   border-top-color: #ae8c64;
   border-right-color: #ae8c64;
-  -webkit-transition: width 0.15s ease-out,  height 0.15s ease-out 0.25s;
-  -o-transition: width 0.15s ease-out,  height 0.15s ease-out 0.25s;
-  transition: width 0.15s ease-out,  height 0.15s ease-out 0.25s;
+  -webkit-transition: width 0.15s ease-out, 
+ height 0.15s ease-out 0.25s;
+  -o-transition: width 0.15s ease-out, 
+ height 0.15s ease-out 0.25s;
+  transition: width 0.15s ease-out, 
+ height 0.15s ease-out 0.25s;
 }
 
 .draw:hover::after {
   border-bottom-color: #ae8c64;
   border-left-color: #ae8c64;
-  -webkit-transition: border-color 0s ease-out 0.5s, width 0.15s ease-out 0.5s, height 0.15s ease-out 0.75s;
-  -o-transition: border-color 0s ease-out 0.5s, width 0.15s ease-out 0.5s, height 0.15s ease-out 0.75s;
-  transition: border-color 0s ease-out 0.5s, width 0.15s ease-out 0.5s, height 0.15s ease-out 0.75s;
+  -webkit-transition: border-color 0s ease-out 0.5s,
+ width 0.15s ease-out 0.5s,
+ height 0.15s ease-out 0.75s;
+  -o-transition: border-color 0s ease-out 0.5s,
+ width 0.15s ease-out 0.5s,
+ height 0.15s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s,
+ width 0.15s ease-out 0.5s,
+ height 0.15s ease-out 0.75s;
 }
 
 /*------------------------Read More / Slogan-------------------------*/
@@ -8706,7 +8715,12 @@ Tabs
   /* для IE8+ - условие необходимо писать в одну строку */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
   /* IE6 and 7 */
-  filter: progid:DXImageTransform.Microsoft.Matrix( M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand');
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+ M11=0.7071067811865474,
+ M12=-0.7071067811865477,
+ M21=0.7071067811865477,
+ M22=0.7071067811865474,
+ SizingMethod='auto expand');
 }
 
 .hamburger.is-open .hamb-middle {
@@ -8725,7 +8739,12 @@ Tabs
   /* для IE8+ */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
   /* IE6 and 7 */
-  filter: progid:DXImageTransform.Microsoft.Matrix( M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand');
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+ M11=0.7071067811865483,
+ M12=0.7071067811865467,
+ M21=-0.7071067811865467,
+ M22=0.7071067811865483,
+ SizingMethod='auto expand');
 }
 
 .hamburger.is-closed .hamb-top,
@@ -9202,9 +9221,12 @@ Slider v1
           align-items: center;
   z-index: 10;
   opacity: 0;
-  -webkit-animation: slideInDown 1s linear 2.2s forwards, fadeIn 1s ease 2.2s forwards;
-       -o-animation: slideInDown 1s linear 2.2s forwards, fadeIn 1s ease 2.2s forwards;
-          animation: slideInDown 1s linear 2.2s forwards, fadeIn 1s ease 2.2s forwards;
+  -webkit-animation: slideInDown 1s linear 2.2s forwards,
+ fadeIn 1s ease 2.2s forwards;
+       -o-animation: slideInDown 1s linear 2.2s forwards,
+ fadeIn 1s ease 2.2s forwards;
+          animation: slideInDown 1s linear 2.2s forwards,
+ fadeIn 1s ease 2.2s forwards;
 }
 
 #slider .slider-social ul {
@@ -19880,11 +19902,18 @@ Shop Horizontal Nav
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: opacity 1s ease-in-out,  -webkit-transform .5s ease;
-  transition: opacity 1s ease-in-out,  -webkit-transform .5s ease;
-  -o-transition: opacity 1s ease-in-out,  -o-transform .5s ease;
-  transition: transform .5s ease,  opacity 1s ease-in-out;
-  transition: transform .5s ease,  opacity 1s ease-in-out,  -webkit-transform .5s ease,  -o-transform .5s ease;
+  -webkit-transition: opacity 1s ease-in-out, 
+ -webkit-transform .5s ease;
+  transition: opacity 1s ease-in-out, 
+ -webkit-transform .5s ease;
+  -o-transition: opacity 1s ease-in-out, 
+ -o-transform .5s ease;
+  transition: transform .5s ease, 
+ opacity 1s ease-in-out;
+  transition: transform .5s ease, 
+ opacity 1s ease-in-out, 
+ -webkit-transform .5s ease, 
+ -o-transform .5s ease;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
