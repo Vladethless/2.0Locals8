@@ -1927,6 +1927,7 @@ mark {
 
 #slider-4 .carousel-item .carousel-caption-text {
   text-align: left;
+  text-transform: uppercase;
 }
 
 #slider-4 .slider-footer-nav h5 {
@@ -2147,9 +2148,10 @@ Comments Block. Consists styles for Comment List and Comment Form
   font-weight: 800;
 }
 
-/*------------Featured Boxes Top Icon  and Side Icon---------------*/
+
 .featured-boxes.top-icon .f-box {
   text-align: center;
+
 }
 
 .featured-boxes.top-icon .f-box .f-number {
@@ -3641,7 +3643,7 @@ Portfolio hover effects
   background: #fff;
 }
 
-.plus *,
+/* .plus *,
 .plus:before,
 .plus:after {
   -webkit-animation-delay: 0 !important;
@@ -3710,28 +3712,28 @@ Portfolio hover effects
   -webkit-transform: translateY(100%);
        -o-transform: translateY(100%);
           transform: translateY(100%);
-}
+} */
 
-.plus a {
+/* .plus a {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
-}
+} */
 
 .plus:hover {
   background: #fff;
 }
 
-.plus:hover img,
+/* .plus:hover img,
 .plus.hover img {
   zoom: 1;
   -webkit-animation-name: fadeOut30;
        -o-animation-name: fadeOut30;
           animation-name: fadeOut30;
-}
+} */
 
 .plus:hover:before,
 .plus.hover:before,
@@ -10948,6 +10950,7 @@ Slider v4
 
 #slider-4 .navs {
   width: 1.8rem;
+  
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10957,6 +10960,7 @@ Slider v4
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+          
 }
 
 #slider-4 .navs .carousel-control-prev,
@@ -10965,7 +10969,11 @@ Slider v4
   height: 49.5%;
   position: static;
   background: #000;
+  transform: scale3d(1.5, 1.5, 1.5)rotateZ(90deg);
+  
+  
 }
+
 
 #slider-4 .navs .carousel-control-prev-icon,
 #slider-4 .navs .carousel-control-next-icon {
@@ -10973,6 +10981,7 @@ Slider v4
   height: 100%;
   vertical-align: middle;
   line-height: 3.6rem;
+
 }
 
 #slider-4 .navs .carousel-control-prev-icon:before,
@@ -10981,6 +10990,7 @@ Slider v4
   color: #fff;
   font-size: .6rem;
   text-align: center;
+  transform: scale3d(1.5, 1.5, 1.5)rotateZ(90deg);
 }
 
 #slider-4 .navs .carousel-control-prev-icon {
@@ -13599,6 +13609,7 @@ Featured Boxes
 Top Icon  and Side Icon
 ------------------------------------------------------------------------------------------------------------------*/
 .featured-boxes.top-icon {
+  
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
