@@ -10854,7 +10854,7 @@ Slider v4
 }
 
 #slider-4 .slider-footer-nav {
-  width: 100%;
+  width: 10%;
   max-width: 1200px;
   height: 7.2rem;
   position: absolute;
@@ -10867,6 +10867,7 @@ Slider v4
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   overflow: hidden;
   -webkit-box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
           box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
@@ -10969,7 +10970,7 @@ Slider v4
   height: 49.5%;
   position: static;
   background: #000;
-  transform: scale3d(1.5, 1.5, 1.5)rotateZ(90deg);
+
   
   
 }
@@ -21324,6 +21325,16 @@ ul.instagram-photos li img,
 .modal-dialog.cascading-modal.modal-avatar .modal-header img {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#slider-4 .carousel-item .carousel-caption #like_h2{
+  font-size: 40px!important;
+  line-height: 1.4 !important;
+  margin-bottom: 1.8rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+  width: 100%;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
