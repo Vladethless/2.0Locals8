@@ -1076,7 +1076,7 @@ p.lead:last-of-type, p.lead-small:last-of-type, #slider-4 .carousel-item .carous
 }
 
 #company-tabs .tab-img,
-#company-tabs .tab-indicator .current-tab, .footer .footer-brand .brand h6, #steps-bg .tab-content .step .step-text header p, .about-team .member .member-img .social a, .portfolio-default .gallery-item .work-example .description-wrap ul li, .gm-style .gm-style-iw h4, .footer-shop .footer-brand .brand h6 {
+#company-tabs .tab-indicator .current-tab, .footer .footer-brand .brand p, #steps-bg .tab-content .step .step-text header p, .about-team .member .member-img .social a, .portfolio-default .gallery-item .work-example .description-wrap ul li, .gm-style .gm-style-iw h4, .footer-shop .footer-brand .brand h6 {
   margin-bottom: 0.6rem !important;
 }
 
@@ -1105,7 +1105,7 @@ h1, #slider .carousel-caption h2, #slider-4 .carousel-item .carousel-caption h2,
   line-height: 1.4 !important;
 }
 
-.client h3, .client p, #service-page .article h4, .horizontal-wrap .breadcrumbs, .scroller-up-down, #services .service .service-text-right .service-number, #services .service .service-text-left .service-number, .footer .footer-brand .brand h6, .hover-effect-2 .gallery-item .gallery-caption, .hover-effect-2 .grid-with-gutters .gallery-item a .gallery-caption, .hover-effect-2 .gallery-item p, .hover-effect-2 .grid-with-gutters .gallery-item a p, .list-number li h4, .list-horizontal li span, .list-horizontal-img li span, .read-more span, .slogan span, #steps-bg .tab-content .step-indicator, #steps-bg .tab-content .step .step-text header p, #shopping-cart .shopping-cart-items li .item-info .close, #shopping-cart .btn-wrap .sc-collapse, .product .product-img .product-badge, .product .product-img .product-badge-round, .price {
+.client h3, .client p, #service-page .article h4, .horizontal-wrap .breadcrumbs, .scroller-up-down, #services .service .service-text-right .service-number, #services .service .service-text-left .service-number, .footer .footer-brand .brand p, .hover-effect-2 .gallery-item .gallery-caption, .hover-effect-2 .grid-with-gutters .gallery-item a .gallery-caption, .hover-effect-2 .gallery-item p, .hover-effect-2 .grid-with-gutters .gallery-item a p, .list-number li h4, .list-horizontal li span, .list-horizontal-img li span, .read-more span, .slogan span, #steps-bg .tab-content .step-indicator, #steps-bg .tab-content .step .step-text header p, #shopping-cart .shopping-cart-items li .item-info .close, #shopping-cart .btn-wrap .sc-collapse, .product .product-img .product-badge, .product .product-img .product-badge-round, .price {
   line-height: 1 !important;
 }
 
@@ -1890,19 +1890,19 @@ mark {
 }
 
 /*----------------------------Slider-4-----------------------------*/
-#slider-4 .carousel-item .carousel-caption h2 {
+#slider-4 .carousel-item .carousel-caption #like_h2 {
   text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
 }
 
 @media screen and (orientation: portrait) {
-  #slider-4 .carousel-item .carousel-caption h2 {
+  #slider-4 .carousel-item .carousel-caption #like_h2 {
     font-size: -webkit-calc(1.4rem + 0.2vw);
     font-size: calc(1.4rem + 0.2vw);
   }
 }
 
 @media screen and (orientation: landscape) {
-  #slider-4 .carousel-item .carousel-caption h2 {
+  #slider-4 .carousel-item .carousel-caption #like_h2 {
     font-size: -webkit-calc(1.8rem + 0.5vw);
     font-size: calc(1.8rem + 0.5vw);
   }
@@ -1958,6 +1958,7 @@ mark {
 .about-reviews .reviews-carousel .review .review-author p {
   text-transform: capitalize;
 }
+
 
 .pos-rel h2 {
   font-weight: bold;
@@ -2199,9 +2200,9 @@ Comments Block. Consists styles for Comment List and Comment Form
   text-transform: lowercase;
 }
 
-.footer .footer-brand .brand h6 {
+.footer .footer-brand .brand p {
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
 }
 
 .footer .footer-mission {
@@ -3480,6 +3481,11 @@ Portfolio hover effects
 .hover-effect-2 .gallery-item img.animated,
 .hover-effect-2 .grid-with-gutters .gallery-item .gi-inner img.animated {
   opacity: .9;
+}
+.about-reviews .reviews-carousel .review .review-author p{
+  font-size: 30px !important;
+  color: #ae8c64;
+  font-weight: 700;
 }
 
 .hover-effect-2 .gallery-item .gallery-caption,
@@ -11545,7 +11551,7 @@ Footer
   }
 }
 
-.footer .footer-brand .brand h6 {
+.footer .footer-brand .brand p {
   display: inline-block;
 }
 
@@ -17234,9 +17240,10 @@ Contact Page
   padding: 3.6rem;
 }
 
-.contacts #map-wrap .contact-info h3 {
+.contacts #map-wrap .contact-info h2 {
   margin-bottom: 0.9rem;
   font-weight: 700;
+  color: #fff;
 }
 
 .contacts #map-wrap .contact-info .lower-upper li:last-child {
@@ -21335,6 +21342,9 @@ ul.instagram-photos li img,
   font-weight: 800;
   line-height: 1;
   width: 100%;
+}
+.review-author .animated .showIn p.lead-small{
+  font-size: 30px!important;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
