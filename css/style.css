@@ -2597,7 +2597,7 @@ input[type="checkbox"] + label {
 #top-nav-horizontal #horizontal-nav ul li .dropdown-menu ul li a {
   font-size: .65rem;
   color: #ae8c64 !important;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
@@ -3238,7 +3238,9 @@ figure img {
 .hm-black-strong .mask,
 .hm-black-strong .full-bg-img {
   background-color: rgba(0, 0, 0, 0.7);
+
 }
+.
 
 .hm-black-lgt .mask,
 .hm-black-lgt .full-bg-img {
@@ -8555,10 +8557,13 @@ Tabs
 }
 
 .sidebar-nav .dropdown-menu a {
+  
   padding: 0.9rem;
   margin-left: 0.9rem;
   margin-right: 0.9rem;
   background-color: #000;
+  text-transform: uppercase;
+  font-size: 10px!important;
 }
 
 .sidebar-nav .dropdown-menu li:before {
@@ -8901,6 +8906,8 @@ Horizontal Nav
 }
 
 #top-nav-horizontal #horizontal-nav ul li a {
+  font-weight: 700;
+  font-size: 13px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
