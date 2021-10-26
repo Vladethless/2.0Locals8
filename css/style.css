@@ -184,7 +184,7 @@ body {
   position: relative;
   background: #fff;
   width: 100%;
-  padding-top: 9rem;
+  padding-top: 4rem;
   z-index: 11;
 }
 
@@ -1928,6 +1928,7 @@ mark {
 #slider-4 .carousel-item .carousel-caption-text {
   text-align: left;
   text-transform: uppercase;
+
 }
 
 #slider-4 .slider-footer-nav h5 {
@@ -2009,6 +2010,12 @@ mark {
 #banner-video .banner-text-wrap .banner-text h4 {
   font-size: 1.6rem;
   font-weight: 800;
+}
+#banner-video .banner-text-wrap .banner-text p {
+  font-size: 2 rem;
+  font-weight: 800;
+  color: #fff;
+
 }
 
 @media (max-width: 1024px) {
@@ -2197,7 +2204,8 @@ Comments Block. Consists styles for Comment List and Comment Form
 
 .footer ul li span,
 .footer-shop ul li span {
-  text-transform: lowercase;
+  text-transform: uppercase;
+  color: #ae8c64;
 }
 
 .footer .footer-brand .brand p {
@@ -3213,6 +3221,7 @@ figure img {
   overflow: hidden;
   position: relative;
   cursor: default;
+  
 }
 
 /*------------------------------Mask--------------------------------------*/
@@ -9439,6 +9448,7 @@ Slider v1
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  
 }
 
 #slider .carousel-caption .top-post {
@@ -10864,6 +10874,7 @@ Slider v4
   -o-object-fit: cover;
      object-fit: cover;
   font-family: 'object-fit: cover;';
+  filter:alpha(opacity=50); background-color: wheat; opacity:0.5;
 }
 
 #slider-4 .slider-footer-nav {
@@ -10974,6 +10985,7 @@ Slider v4
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+          transform:rotate(90deg);
           
 }
 
@@ -14303,6 +14315,7 @@ Team Section
   max-height: 9rem;
   margin-bottom: 1.8rem;
   overflow: hidden;
+  font-size: 15px !important;
 }
 
 .about-team .member .member-info .member-position {
@@ -16360,6 +16373,11 @@ Portfolio Single Page
 
 #gallery-single-5 .gs-description {
   font-weight: 400;
+}
+.list-horizontal .gs-description h2 {
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /*------------------------------------------------------------------------------------------------------------------
@@ -21349,6 +21367,9 @@ ul.instagram-photos li img,
   font-weight: 800;
   line-height: 1;
   width: 100%;
+  text-transform: uppercase;
+  color:;
+
 }
 .review-author .animated .showIn p.lead-small{
   font-size: 30px!important;
