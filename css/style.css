@@ -13818,7 +13818,8 @@ Top Icon  and Side Icon
 }
 
 .featured-boxes.icon-side .f-box .f-box-icon img {
-  width: 100%;
+  width: 400px;
+  padding-bottom: 200px;
 }
 
 .featured-boxes.icon-side .f-box .f-box-text {
